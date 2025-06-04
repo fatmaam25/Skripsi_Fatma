@@ -763,7 +763,7 @@ elif st.session_state.current_page == "Hasil":
                 mean_actual_eval = np.mean(eval_data['Y']) if eval_data is not None and not eval_data.empty else 1
                 rmse_percentage_eval = (rmse / mean_actual_eval) * 100
                 st.markdown(f"### 🎯 RMSE: **{rmse :.4f}**")
-                st.success(f"**{rmse_percentage_eval:.2f}%** dari rata-rata aktual")
+                #st.success(f"**{rmse_percentage_eval:.2f}%** dari rata-rata aktual")
             else:
                 st.info("RMSE tidak tersedia karena data aktual tahun prediksi belum tersedia.")
 
